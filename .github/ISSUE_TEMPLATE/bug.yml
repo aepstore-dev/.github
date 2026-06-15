@@ -1,0 +1,67 @@
+name: "🐞 Баг-репорт"
+description: "Что-то работает не так, как ожидалось"
+title: "[Баг]: "
+labels: ["баг"]
+body:
+  - type: dropdown
+    id: service
+    attributes:
+      label: Сервис / область
+      options:
+        - auth-service
+        - gateway-service
+        - users-service
+        - products-service
+        - activity-service
+        - payments-service
+        - taxonomy-service
+        - support-service
+        - upload-service
+        - tasks-service
+        - mail-service
+        - contracts (proto)
+        - shared lib (database/passport/storage/rbac/cache/common/core)
+        - frontend (landing)
+        - инфраструктура / docker
+        - другое
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Что происходит (факт)
+      description: Фактическое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Окружение
+      description: Стенд / docker / прод, версии пакетов (contracts/database и т.п.)
+      placeholder: "docker, contracts 1.28.0"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Логи / скриншоты
+      description: Вывод ошибки, ответ API, скриншоты
+      render: shell
+    validations:
+      required: false

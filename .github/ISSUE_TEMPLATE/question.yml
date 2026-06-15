@@ -1,0 +1,49 @@
+name: "❓ Вопрос / уточнение"
+description: "Нужно объяснение или решение по неясному моменту (статус «требуют объяснения»)"
+title: "[Вопрос]: "
+labels: ["требует объяснения"]
+body:
+  - type: dropdown
+    id: service
+    attributes:
+      label: Сервис / область
+      options:
+        - auth-service
+        - gateway-service
+        - users-service
+        - products-service
+        - activity-service
+        - payments-service
+        - taxonomy-service
+        - support-service
+        - upload-service
+        - tasks-service
+        - mail-service
+        - contracts (proto)
+        - shared lib (database/passport/storage/rbac/cache/common/core)
+        - frontend (landing)
+        - инфраструктура / docker
+        - другое
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Что непонятно
+      description: Суть вопроса / что требует объяснения
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Контекст
+      description: Где встретилось, связанные задачи/код
+    validations:
+      required: false
+  - type: textarea
+    id: options
+    attributes:
+      label: Возможные варианты
+      description: Если есть гипотезы или варианты решения
+    validations:
+      required: false

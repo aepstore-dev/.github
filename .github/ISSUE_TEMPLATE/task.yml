@@ -1,0 +1,54 @@
+name: "📋 Задача / фича"
+description: "Новая задача, доработка или фича"
+title: "[Задача]: "
+labels: ["задача"]
+body:
+  - type: dropdown
+    id: service
+    attributes:
+      label: Сервис / область
+      description: К какому сервису или части системы относится задача
+      options:
+        - auth-service
+        - gateway-service
+        - users-service
+        - products-service
+        - activity-service
+        - payments-service
+        - taxonomy-service
+        - support-service
+        - upload-service
+        - tasks-service
+        - mail-service
+        - contracts (proto)
+        - shared lib (database/passport/storage/rbac/cache/common/core)
+        - frontend (landing)
+        - инфраструктура / docker
+        - другое
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание
+      description: Что нужно сделать и зачем
+      placeholder: Кратко суть задачи и мотивация
+    validations:
+      required: true
+  - type: textarea
+    id: dod
+    attributes:
+      label: Критерии готовности (Definition of Done)
+      description: По каким признакам задача считается выполненной
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Контекст / ссылки
+      description: Связанные issues, PR, эндпоинты, скриншоты, дизайн
+    validations:
+      required: false
