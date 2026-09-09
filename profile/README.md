@@ -31,7 +31,7 @@
 
 🌐 **Сайт:** [aepstore.su](https://aepstore.su)
 
-📧 **Коммерческие предложения и вопросы:** [torro@goonmail.ru](mailto:torro@goonmail.ru)
+📧 **Коммерческие предложения и вопросы:** [contact@anata.moe](mailto:contact@anata.moe)
 
 ---
 
