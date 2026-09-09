@@ -29,7 +29,7 @@
 - VK: [vk.com/aepstore_official](https://vk.com/aepstore_official)
 - Discord: [discord.gg/6K2gaHpXF9](https://discord.gg/6K2gaHpXF9)
 
-🌐 **Сайт:** [aepstore.su](https://aepstore.su)
+🌐 **Сайт:** [aepstore.net](https://aepstore.net)
 
 📧 **Коммерческие предложения и вопросы:** [contact@anata.moe](mailto:contact@anata.moe)
 
